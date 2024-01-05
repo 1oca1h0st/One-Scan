@@ -18,6 +18,20 @@ Route::get('/', function () {
     return view('dashboard');
 })->middleware('auth')->name('dashboard');
 
+Route::prefix('/project')->middleware(['auth'])->namespace('Project')->group(function () {
+    Route::get('/', function () {
+        return view('dashboard');
+    })->name('project');
+});
+
+Route::prefix('/tools')->middleware(['auth'])->namespace('Tools')->group(function () {
+
+});
+
+Route::prefix('/search')->middleware(['auth'])->namespace('Search')->group(function () {
+
+});
+
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');

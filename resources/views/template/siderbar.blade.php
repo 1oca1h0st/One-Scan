@@ -219,8 +219,8 @@
                   </span>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                <li class="nav-item dropdown {{ request()->routeIs('project') ? 'active' : '' }}">
+                    <a class="nav-link dropdown-toggle show" href="#navbar-base" data-bs-toggle="dropdown"
                        data-bs-auto-close="false" role="button" aria-expanded="false">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
@@ -233,7 +233,7 @@
                     项目管理
                   </span>
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu {{ request()->is('project*') ? 'expand show' : '' }}">
                         <div class="dropdown-menu-columns">
                             <div class="dropdown-menu-column">
                                 <div class="dropend">
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown {{ request()->routeIs('tools') ? 'active' : '' }}">
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                        data-bs-auto-close="false" role="button" aria-expanded="false">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
@@ -304,7 +304,7 @@
                     通用工具
                   </span>
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu {{ request()->is('tools*') ? 'expand show' : '' }}">
                         <div class="dropdown-menu-columns">
                             <div class="dropdown-menu-column">
                                 <div class="dropend">
@@ -395,7 +395,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown {{ request()->routeIs('search') ? 'active' : '' }}">
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                        data-bs-auto-close="false" role="button" aria-expanded="false">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
@@ -411,7 +411,7 @@
                     空间引擎
                   </span>
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu {{ request()->is('search*') ? 'expand show' : '' }}">
                         <div class="dropdown-menu-columns">
                             <div class="dropdown-menu-column">
                                 <div class="dropend">
