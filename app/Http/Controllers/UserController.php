@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
 
-class LoginController extends Controller
+class UserController extends Controller
 {
     /**
      * @param Request $request
@@ -29,6 +31,28 @@ class LoginController extends Controller
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
+    }
+
+    /**
+     * @param Request $request
+     * @return RedirectResponse
+     * 创建用户
+     */
+    public function createUser(Request $request): RedirectResponse
+    {
+        $new_user = $request->validate([
+            'email' => ['required', 'email'],
+            'name' => ['required'],
+            'password' => ['required']
+        ]);
+
+        User::create([
+            'name' => $new_user['name'],
+            'email' => $new_user['email'],
+            'password' => Hash::make($new_user['password']),
+        ]);
+
+        return \redirect()->route('dashboard');
     }
 
     /**
