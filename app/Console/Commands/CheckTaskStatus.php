@@ -5,21 +5,21 @@ namespace App\Console\Commands;
 use App\Celery;
 use Illuminate\Console\Command;
 
-class TestCommand extends Command
+class CheckTaskStatus extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'command:test';
+    protected $signature = 'task:status {task_id}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Checks the status of a Celery task';
 
     /**
      * Execute the console command.
@@ -34,14 +34,14 @@ class TestCommand extends Command
 
         $celery = new Celery($host, $port, $username, $pass, $vhost);
 
-        $queue = 'celery';
-        $task = 'tasks.add';
-        $args = [4, 4];
+        $taskId = $this->argument('task_id');
+        $result = $celery->getTaskResult($taskId);
 
-        $task_id = $celery->postTask($queue, $task, $args);
-        $celery->close();
-
-        echo $task_id;
-        return $task_id;
+        if ($result) {
+            $this->info('Task result:');
+            $this->line($result);
+        } else {
+            $this->error('Task result not found for task ID: ' . $taskId);
+        }
     }
 }
