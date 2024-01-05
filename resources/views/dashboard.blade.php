@@ -1,6 +1,8 @@
+@extends('template.header')
 
-@include('template.header')
-<body  class=" layout-fluid">
+@section('title', 'Dashboard')
+
+<body class="layout-fluid">
 <script src="./dist/js/demo-theme.min.js?1684106062"></script>
 <div class="page">
     @include('template.siderbar')
@@ -15,7 +17,7 @@
                             Overview
                         </div>
                         <h2 class="page-title">
-                            Fluid vertical layout
+                            Dashboard
                         </h2>
                     </div>
                     <!-- Page title actions -->
@@ -26,14 +28,28 @@
                       New view
                     </a>
                   </span>
-                            <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+                            <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal"
+                               data-bs-target="#modal-report">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                     stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 5l0 14"/>
+                                    <path d="M5 12l14 0"/>
+                                </svg>
                                 Create new report
                             </a>
-                            <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+                            <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal"
+                               data-bs-target="#modal-report" aria-label="Create new report">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                     stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 5l0 14"/>
+                                    <path d="M5 12l14 0"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -51,7 +67,8 @@
                                     <div class="subheader">Sales</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Last 7 days</a>
+                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">Last 7 days</a>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item active" href="#">Last 7 days</a>
                                                 <a class="dropdown-item" href="#">Last 30 days</a>
@@ -66,12 +83,18 @@
                                     <div class="ms-auto">
                         <span class="text-green d-inline-flex align-items-center lh-1">
                           7% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l6 -6l4 4l8 -8" /><path d="M14 7l7 0l0 7" /></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24"
+                               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                               stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                    fill="none"/><path
+                                  d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
                         </span>
                                     </div>
                                 </div>
                                 <div class="progress progress-sm">
-                                    <div class="progress-bar bg-primary" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="75% Complete">
+                                    <div class="progress-bar bg-primary" style="width: 75%" role="progressbar"
+                                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                         aria-label="75% Complete">
                                         <span class="visually-hidden">75% Complete</span>
                                     </div>
                                 </div>
@@ -85,7 +108,8 @@
                                     <div class="subheader">Revenue</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Last 7 days</a>
+                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">Last 7 days</a>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item active" href="#">Last 7 days</a>
                                                 <a class="dropdown-item" href="#">Last 30 days</a>
@@ -99,7 +123,11 @@
                                     <div class="me-auto">
                         <span class="text-green d-inline-flex align-items-center lh-1">
                           8% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l6 -6l4 4l8 -8" /><path d="M14 7l7 0l0 7" /></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24"
+                               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                               stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                    fill="none"/><path
+                                  d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
                         </span>
                                     </div>
                                 </div>
@@ -114,7 +142,8 @@
                                     <div class="subheader">New clients</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Last 7 days</a>
+                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">Last 7 days</a>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item active" href="#">Last 7 days</a>
                                                 <a class="dropdown-item" href="#">Last 30 days</a>
@@ -128,7 +157,10 @@
                                     <div class="me-auto">
                         <span class="text-yellow d-inline-flex align-items-center lh-1">
                           0% <!-- Download SVG icon from http://tabler-icons.io/i/minus -->
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24"
+                               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                               stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                    fill="none"/><path d="M5 12l14 0"/></svg>
                         </span>
                                     </div>
                                 </div>
@@ -143,7 +175,8 @@
                                     <div class="subheader">Active users</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
-                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Last 7 days</a>
+                                            <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">Last 7 days</a>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item active" href="#">Last 7 days</a>
                                                 <a class="dropdown-item" href="#">Last 30 days</a>
@@ -157,7 +190,11 @@
                                     <div class="me-auto">
                         <span class="text-green d-inline-flex align-items-center lh-1">
                           4% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l6 -6l4 4l8 -8" /><path d="M14 7l7 0l0 7" /></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24"
+                               viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                               stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                    fill="none"/><path
+                                  d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
                         </span>
                                     </div>
                                 </div>
@@ -173,7 +210,12 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                             <span class="bg-primary text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" /><path d="M12 3v3m0 12v3" /></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                   viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                        fill="none"/><path
+                                      d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"/><path
+                                      d="M12 3v3m0 12v3"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -194,7 +236,13 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                             <span class="bg-green text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/shopping-cart -->
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                   viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                        fill="none"/><path
+                                      d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path
+                                      d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 17h-11v-14h-2"/><path
+                                      d="M6 5l14 1l-1 7h-13"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -215,7 +263,11 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                             <span class="bg-twitter text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/brand-twitter -->
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" /></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                   viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                        fill="none"/><path
+                                      d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -236,7 +288,11 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                             <span class="bg-facebook text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/brand-facebook -->
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                   viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                                        fill="none"/><path
+                                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -280,9 +336,12 @@
                                     <div class="card-body">
                                         <p class="mb-3">Using Storage <strong>6854.45 MB </strong>of 8 GB</p>
                                         <div class="progress progress-separated mb-3">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 44%" aria-label="Regular"></div>
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 19%" aria-label="System"></div>
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 9%" aria-label="Shared"></div>
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 44%"
+                                                 aria-label="Regular"></div>
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 19%"
+                                                 aria-label="System"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 9%"
+                                                 aria-label="Shared"></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-auto d-flex align-items-center pe-2">
@@ -320,7 +379,8 @@
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Jeffie Lewzey</strong> commented on your <strong>"I'm not a witch."</strong> post.
+                                                            <strong>Jeffie Lewzey</strong> commented on your <strong>"I'm
+                                                                not a witch."</strong> post.
                                                         </div>
                                                         <div class="text-muted">yesterday</div>
                                                     </div>
@@ -332,11 +392,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/002m.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/002m.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            It's <strong>Mallory Hulme</strong>'s birthday. Wish him well!
+                                                            It's <strong>Mallory Hulme</strong>'s birthday. Wish him
+                                                            well!
                                                         </div>
                                                         <div class="text-muted">2 days ago</div>
                                                     </div>
@@ -348,11 +410,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/003m.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/003m.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Dunn Slane</strong> posted <strong>"Well, what do you want?"</strong>.
+                                                            <strong>Dunn Slane</strong> posted <strong>"Well, what do
+                                                                you want?"</strong>.
                                                         </div>
                                                         <div class="text-muted">today</div>
                                                     </div>
@@ -364,11 +428,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/000f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/000f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Emmy Levet</strong> created a new project <strong>Morning alarm clock</strong>.
+                                                            <strong>Emmy Levet</strong> created a new project <strong>Morning
+                                                                alarm clock</strong>.
                                                         </div>
                                                         <div class="text-muted">4 days ago</div>
                                                     </div>
@@ -380,7 +446,8 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/001f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/001f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
@@ -397,7 +464,8 @@
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Egan Poetz</strong> registered new client as <strong>Trilia</strong>.
+                                                            <strong>Egan Poetz</strong> registered new client as
+                                                            <strong>Trilia</strong>.
                                                         </div>
                                                         <div class="text-muted">yesterday</div>
                                                     </div>
@@ -406,11 +474,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/002f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/002f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Kellie Skingley</strong> closed a new deal on project <strong>Pen Pineapple Apple Pen</strong>.
+                                                            <strong>Kellie Skingley</strong> closed a new deal on
+                                                            project <strong>Pen Pineapple Apple Pen</strong>.
                                                         </div>
                                                         <div class="text-muted">2 days ago</div>
                                                     </div>
@@ -419,11 +489,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/003f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/003f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Christabel Charlwood</strong> created a new project for <strong>Wikibox</strong>.
+                                                            <strong>Christabel Charlwood</strong> created a new project
+                                                            for <strong>Wikibox</strong>.
                                                         </div>
                                                         <div class="text-muted">4 days ago</div>
                                                     </div>
@@ -436,7 +508,8 @@
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Haskel Shelper</strong> change status of <strong>Tabler Icons</strong> from <strong>open</strong> to <strong>closed</strong>.
+                                                            <strong>Haskel Shelper</strong> change status of <strong>Tabler
+                                                                Icons</strong> from <strong>open</strong> to <strong>closed</strong>.
                                                         </div>
                                                         <div class="text-muted">today</div>
                                                     </div>
@@ -445,11 +518,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/006m.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/006m.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Lorry Mion</strong> liked <strong>Tabler UI Kit</strong>.
+                                                            <strong>Lorry Mion</strong> liked <strong>Tabler UI
+                                                                Kit</strong>.
                                                         </div>
                                                         <div class="text-muted">yesterday</div>
                                                     </div>
@@ -458,7 +533,8 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/004f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/004f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
@@ -471,7 +547,8 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/007m.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/007m.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
@@ -488,7 +565,8 @@
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Sunny Airey</strong> upload 3 new photos to category <strong>Inspirations</strong>.
+                                                            <strong>Sunny Airey</strong> upload 3 new photos to category
+                                                            <strong>Inspirations</strong>.
                                                         </div>
                                                         <div class="text-muted">2 days ago</div>
                                                     </div>
@@ -497,11 +575,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/009m.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/009m.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Geoffry Flaunders</strong> made a <strong>$10</strong> donation.
+                                                            <strong>Geoffry Flaunders</strong> made a
+                                                            <strong>$10</strong> donation.
                                                         </div>
                                                         <div class="text-muted">2 days ago</div>
                                                     </div>
@@ -510,7 +590,8 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/010m.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/010m.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
@@ -523,11 +604,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/005f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/005f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Dyann Escala</strong> hosted the event <strong>Tabler UI Birthday</strong>.
+                                                            <strong>Dyann Escala</strong> hosted the event <strong>Tabler
+                                                                UI Birthday</strong>.
                                                         </div>
                                                         <div class="text-muted">4 days ago</div>
                                                     </div>
@@ -536,11 +619,13 @@
                                             <div>
                                                 <div class="row">
                                                     <div class="col-auto">
-                                                        <span class="avatar" style="background-image: url(./static/avatars/006f.jpg)"></span>
+                                                        <span class="avatar"
+                                                              style="background-image: url(./static/avatars/006f.jpg)"></span>
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Avivah Mugleston</strong> mentioned you on <strong>Best of 2020</strong>.
+                                                            <strong>Avivah Mugleston</strong> mentioned you on <strong>Best
+                                                                of 2020</strong>.
                                                         </div>
                                                         <div class="text-muted">2 days ago</div>
                                                     </div>
@@ -553,7 +638,8 @@
                                                     </div>
                                                     <div class="col">
                                                         <div class="text-truncate">
-                                                            <strong>Arlie Armstead</strong> sent a Review Request to <strong>Amanda Blake</strong>.
+                                                            <strong>Arlie Armstead</strong> sent a Review Request to
+                                                            <strong>Amanda Blake</strong>.
                                                         </div>
                                                         <div class="text-muted">2 days ago</div>
                                                     </div>
@@ -574,13 +660,23 @@
                                 <div class="position-absolute top-0 left-0 px-3 mt-1 w-75">
                                     <div class="row g-2">
                                         <div class="col-auto">
-                                            <div class="chart-sparkline chart-sparkline-square" id="sparkline-activity"></div>
+                                            <div class="chart-sparkline chart-sparkline-square"
+                                                 id="sparkline-activity"></div>
                                         </div>
                                         <div class="col">
                                             <div>Today's Earning: $4,262.40</div>
-                                            <div class="text-muted"><!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l6 -6l4 4l8 -8" /><path d="M14 7l7 0l0 7" /></svg>
-                                                +5% more than yesterday</div>
+                                            <div class="text-muted">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     class="icon icon-inline text-green" width="24" height="24"
+                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M3 17l6 -6l4 4l8 -8"/>
+                                                    <path d="M14 7l7 0l0 7"/>
+                                                </svg>
+                                                +5% more than yesterday
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -598,7 +694,8 @@
                                     <tbody>
                                     <tr>
                                         <td class="w-1">
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/000m.jpg)"></span>
                                         </td>
                                         <td class="td-truncate">
                                             <div class="text-truncate">
@@ -620,7 +717,8 @@
                                     </tr>
                                     <tr>
                                         <td class="w-1">
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/002m.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/002m.jpg)"></span>
                                         </td>
                                         <td class="td-truncate">
                                             <div class="text-truncate">
@@ -631,7 +729,8 @@
                                     </tr>
                                     <tr>
                                         <td class="w-1">
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/003m.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/003m.jpg)"></span>
                                         </td>
                                         <td class="td-truncate">
                                             <div class="text-truncate">
@@ -642,7 +741,8 @@
                                     </tr>
                                     <tr>
                                         <td class="w-1">
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000f.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/000f.jpg)"></span>
                                         </td>
                                         <td class="td-truncate">
                                             <div class="text-truncate">
@@ -661,7 +761,16 @@
                             <div class="card-stamp card-stamp-lg">
                                 <div class="card-stamp-icon bg-primary">
                                     <!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7" /><path d="M10 10l.01 0" /><path d="M14 10l.01 0" /><path d="M10 14a3.5 3.5 0 0 0 4 0" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                         stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path
+                                            d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7"/>
+                                        <path d="M10 10l.01 0"/>
+                                        <path d="M14 10l.01 0"/>
+                                        <path d="M10 14a3.5 3.5 0 0 0 4 0"/>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -671,10 +780,12 @@
                                         <div class="markdown text-muted">
                                             All icons come from the Tabler Icons set and are MIT-licensed. Visit
                                             <a href="https://tabler-icons.io" target="_blank" rel="noopener">tabler-icons.io</a>,
-                                            download any of the 4158 icons in SVG, PNG or&nbsp;React and use them in your favourite design tools.
+                                            download any of the 4158 icons in SVG, PNG or&nbsp;React and use them in
+                                            your favourite design tools.
                                         </div>
                                         <div class="mt-3">
-                                            <a href="https://tabler-icons.io" class="btn btn-primary" target="_blank" rel="noopener">Download icons</a>
+                                            <a href="https://tabler-icons.io" class="btn btn-primary" target="_blank"
+                                               rel="noopener">Download icons</a>
                                         </div>
                                     </div>
                                 </div>
@@ -699,85 +810,151 @@
                                     <tr>
                                         <td>
                                             /
-                                            <a href="#" class="ms-1" aria-label="Open website"><!-- Download SVG icon from http://tabler-icons.io/i/link -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/link -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M9 15l6 -6"/>
+                                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
+                                                    <path
+                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                </svg>
                                             </a>
                                         </td>
                                         <td class="text-muted">4,896</td>
                                         <td class="text-muted">3,654</td>
                                         <td class="text-muted">82.54%</td>
                                         <td class="text-end w-1">
-                                            <div class="chart-sparkline chart-sparkline-sm" id="sparkline-bounce-rate-1"></div>
+                                            <div class="chart-sparkline chart-sparkline-sm"
+                                                 id="sparkline-bounce-rate-1"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             /form-elements.html
-                                            <a href="#" class="ms-1" aria-label="Open website"><!-- Download SVG icon from http://tabler-icons.io/i/link -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/link -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M9 15l6 -6"/>
+                                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
+                                                    <path
+                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                </svg>
                                             </a>
                                         </td>
                                         <td class="text-muted">3,652</td>
                                         <td class="text-muted">3,215</td>
                                         <td class="text-muted">76.29%</td>
                                         <td class="text-end w-1">
-                                            <div class="chart-sparkline chart-sparkline-sm" id="sparkline-bounce-rate-2"></div>
+                                            <div class="chart-sparkline chart-sparkline-sm"
+                                                 id="sparkline-bounce-rate-2"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             /index.html
-                                            <a href="#" class="ms-1" aria-label="Open website"><!-- Download SVG icon from http://tabler-icons.io/i/link -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/link -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M9 15l6 -6"/>
+                                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
+                                                    <path
+                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                </svg>
                                             </a>
                                         </td>
                                         <td class="text-muted">3,256</td>
                                         <td class="text-muted">2,865</td>
                                         <td class="text-muted">72.65%</td>
                                         <td class="text-end w-1">
-                                            <div class="chart-sparkline chart-sparkline-sm" id="sparkline-bounce-rate-3"></div>
+                                            <div class="chart-sparkline chart-sparkline-sm"
+                                                 id="sparkline-bounce-rate-3"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             /icons.html
-                                            <a href="#" class="ms-1" aria-label="Open website"><!-- Download SVG icon from http://tabler-icons.io/i/link -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/link -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M9 15l6 -6"/>
+                                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
+                                                    <path
+                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                </svg>
                                             </a>
                                         </td>
                                         <td class="text-muted">986</td>
                                         <td class="text-muted">865</td>
                                         <td class="text-muted">44.89%</td>
                                         <td class="text-end w-1">
-                                            <div class="chart-sparkline chart-sparkline-sm" id="sparkline-bounce-rate-4"></div>
+                                            <div class="chart-sparkline chart-sparkline-sm"
+                                                 id="sparkline-bounce-rate-4"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             /docs/
-                                            <a href="#" class="ms-1" aria-label="Open website"><!-- Download SVG icon from http://tabler-icons.io/i/link -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/link -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M9 15l6 -6"/>
+                                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
+                                                    <path
+                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                </svg>
                                             </a>
                                         </td>
                                         <td class="text-muted">912</td>
                                         <td class="text-muted">822</td>
                                         <td class="text-muted">41.12%</td>
                                         <td class="text-end w-1">
-                                            <div class="chart-sparkline chart-sparkline-sm" id="sparkline-bounce-rate-5"></div>
+                                            <div class="chart-sparkline chart-sparkline-sm"
+                                                 id="sparkline-bounce-rate-5"></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             /accordion.html
-                                            <a href="#" class="ms-1" aria-label="Open website"><!-- Download SVG icon from http://tabler-icons.io/i/link -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                <!-- Download SVG icon from http://tabler-icons.io/i/link -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M9 15l6 -6"/>
+                                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
+                                                    <path
+                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                </svg>
                                             </a>
                                         </td>
                                         <td class="text-muted">855</td>
                                         <td class="text-muted">798</td>
                                         <td class="text-muted">32.65%</td>
                                         <td class="text-end w-1">
-                                            <div class="chart-sparkline chart-sparkline-sm" id="sparkline-bounce-rate-6"></div>
+                                            <div class="chart-sparkline chart-sparkline-sm"
+                                                 id="sparkline-bounce-rate-6"></div>
                                         </td>
                                     </tr>
                                 </table>
@@ -785,7 +962,9 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <a href="https://github.com/sponsors/codecalm" class="card card-sponsor" target="_blank" rel="noopener" style="background-image: url(./static/sponsor-banner-homepage.svg)" aria-label="Sponsor Tabler!">
+                        <a href="https://github.com/sponsors/codecalm" class="card card-sponsor" target="_blank"
+                           rel="noopener" style="background-image: url(./static/sponsor-banner-homepage.svg)"
+                           aria-label="Sponsor Tabler!">
                             <div class="card-body"></div>
                         </a>
                     </div>
@@ -878,56 +1057,111 @@
                                 <table class="table card-table table-vcenter">
                                     <tr>
                                         <td class="w-1 pe-0">
-                                            <input type="checkbox" class="form-check-input m-0 align-middle" aria-label="Select task" checked >
+                                            <input type="checkbox" class="form-check-input m-0 align-middle"
+                                                   aria-label="Select task" checked>
                                         </td>
                                         <td class="w-100">
                                             <a href="#" class="text-reset">Extend the data model.</a>
                                         </td>
                                         <td class="text-nowrap text-muted">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path
+                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                <path d="M16 3v4"/>
+                                                <path d="M8 3v4"/>
+                                                <path d="M4 11h16"/>
+                                                <path d="M11 15h1"/>
+                                                <path d="M12 15v3"/>
+                                            </svg>
                                             August 04, 2021
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/check -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M5 12l5 5l10 -10"/>
+                                                </svg>
                                                 2/7
                                             </a>
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/message -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M8 9h8"/>
+                                                    <path d="M8 13h6"/>
+                                                    <path
+                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                </svg>
                                                 3</a>
                                         </td>
                                         <td>
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/000m.jpg)"></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="w-1 pe-0">
-                                            <input type="checkbox" class="form-check-input m-0 align-middle" aria-label="Select task" >
+                                            <input type="checkbox" class="form-check-input m-0 align-middle"
+                                                   aria-label="Select task">
                                         </td>
                                         <td class="w-100">
                                             <a href="#" class="text-reset">Verify the event flow.</a>
                                         </td>
                                         <td class="text-nowrap text-muted">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path
+                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                <path d="M16 3v4"/>
+                                                <path d="M8 3v4"/>
+                                                <path d="M4 11h16"/>
+                                                <path d="M11 15h1"/>
+                                                <path d="M12 15v3"/>
+                                            </svg>
                                             January 03, 2019
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/check -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M5 12l5 5l10 -10"/>
+                                                </svg>
                                                 3/10
                                             </a>
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/message -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M8 9h8"/>
+                                                    <path d="M8 13h6"/>
+                                                    <path
+                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                </svg>
                                                 6</a>
                                         </td>
                                         <td>
@@ -936,118 +1170,230 @@
                                     </tr>
                                     <tr>
                                         <td class="w-1 pe-0">
-                                            <input type="checkbox" class="form-check-input m-0 align-middle" aria-label="Select task" >
+                                            <input type="checkbox" class="form-check-input m-0 align-middle"
+                                                   aria-label="Select task">
                                         </td>
                                         <td class="w-100">
                                             <a href="#" class="text-reset">Database backup and maintenance</a>
                                         </td>
                                         <td class="text-nowrap text-muted">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path
+                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                <path d="M16 3v4"/>
+                                                <path d="M8 3v4"/>
+                                                <path d="M4 11h16"/>
+                                                <path d="M11 15h1"/>
+                                                <path d="M12 15v3"/>
+                                            </svg>
                                             December 28, 2018
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/check -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M5 12l5 5l10 -10"/>
+                                                </svg>
                                                 0/6
                                             </a>
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/message -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M8 9h8"/>
+                                                    <path d="M8 13h6"/>
+                                                    <path
+                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                </svg>
                                                 1</a>
                                         </td>
                                         <td>
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/002m.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/002m.jpg)"></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="w-1 pe-0">
-                                            <input type="checkbox" class="form-check-input m-0 align-middle" aria-label="Select task" checked >
+                                            <input type="checkbox" class="form-check-input m-0 align-middle"
+                                                   aria-label="Select task" checked>
                                         </td>
                                         <td class="w-100">
                                             <a href="#" class="text-reset">Identify the implementation team.</a>
                                         </td>
                                         <td class="text-nowrap text-muted">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path
+                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                <path d="M16 3v4"/>
+                                                <path d="M8 3v4"/>
+                                                <path d="M4 11h16"/>
+                                                <path d="M11 15h1"/>
+                                                <path d="M12 15v3"/>
+                                            </svg>
                                             November 07, 2020
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/check -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M5 12l5 5l10 -10"/>
+                                                </svg>
                                                 6/10
                                             </a>
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/message -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M8 9h8"/>
+                                                    <path d="M8 13h6"/>
+                                                    <path
+                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                </svg>
                                                 12</a>
                                         </td>
                                         <td>
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/003m.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/003m.jpg)"></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="w-1 pe-0">
-                                            <input type="checkbox" class="form-check-input m-0 align-middle" aria-label="Select task" >
+                                            <input type="checkbox" class="form-check-input m-0 align-middle"
+                                                   aria-label="Select task">
                                         </td>
                                         <td class="w-100">
                                             <a href="#" class="text-reset">Define users and workflow</a>
                                         </td>
                                         <td class="text-nowrap text-muted">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path
+                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                <path d="M16 3v4"/>
+                                                <path d="M8 3v4"/>
+                                                <path d="M4 11h16"/>
+                                                <path d="M11 15h1"/>
+                                                <path d="M12 15v3"/>
+                                            </svg>
                                             November 23, 2021
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/check -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M5 12l5 5l10 -10"/>
+                                                </svg>
                                                 3/7
                                             </a>
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/message -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M8 9h8"/>
+                                                    <path d="M8 13h6"/>
+                                                    <path
+                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                </svg>
                                                 5</a>
                                         </td>
                                         <td>
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000f.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/000f.jpg)"></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="w-1 pe-0">
-                                            <input type="checkbox" class="form-check-input m-0 align-middle" aria-label="Select task" checked >
+                                            <input type="checkbox" class="form-check-input m-0 align-middle"
+                                                   aria-label="Select task" checked>
                                         </td>
                                         <td class="w-100">
                                             <a href="#" class="text-reset">Check Pull Requests</a>
                                         </td>
                                         <td class="text-nowrap text-muted">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path
+                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                <path d="M16 3v4"/>
+                                                <path d="M8 3v4"/>
+                                                <path d="M4 11h16"/>
+                                                <path d="M11 15h1"/>
+                                                <path d="M12 15v3"/>
+                                            </svg>
                                             January 14, 2021
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/check -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M5 12l5 5l10 -10"/>
+                                                </svg>
                                                 2/9
                                             </a>
                                         </td>
                                         <td class="text-nowrap">
                                             <a href="#" class="text-muted">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/message -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                     stroke="currentColor" fill="none" stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                    <path d="M8 9h8"/>
+                                                    <path d="M8 13h6"/>
+                                                    <path
+                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                </svg>
                                                 3</a>
                                         </td>
                                         <td>
-                                            <span class="avatar avatar-sm" style="background-image: url(./static/avatars/001f.jpg)"></span>
+                                            <span class="avatar avatar-sm"
+                                                  style="background-image: url(./static/avatars/001f.jpg)"></span>
                                         </td>
                                     </tr>
                                 </table>
@@ -1064,14 +1410,16 @@
                                     <div class="text-muted">
                                         Show
                                         <div class="mx-2 d-inline-block">
-                                            <input type="text" class="form-control form-control-sm" value="8" size="3" aria-label="Invoices count">
+                                            <input type="text" class="form-control form-control-sm" value="8" size="3"
+                                                   aria-label="Invoices count">
                                         </div>
                                         entries
                                     </div>
                                     <div class="ms-auto text-muted">
                                         Search:
                                         <div class="ms-2 d-inline-block">
-                                            <input type="text" class="form-control form-control-sm" aria-label="Search invoice">
+                                            <input type="text" class="form-control form-control-sm"
+                                                   aria-label="Search invoice">
                                         </div>
                                     </div>
                                 </div>
@@ -1080,9 +1428,17 @@
                                 <table class="table card-table table-vcenter text-nowrap datatable">
                                     <thead>
                                     <tr>
-                                        <th class="w-1"><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select all invoices"></th>
-                                        <th class="w-1">No. <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>
+                                        <th class="w-1"><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                               aria-label="Select all invoices"></th>
+                                        <th class="w-1">No.
+                                            <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick"
+                                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                 stroke="currentColor" fill="none" stroke-linecap="round"
+                                                 stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M6 15l6 -6l6 6"/>
+                                            </svg>
                                         </th>
                                         <th>Invoice Subject</th>
                                         <th>Client</th>
@@ -1095,9 +1451,11 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001401</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Design Works</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Design Works</a>
+                                        </td>
                                         <td>
                                             <span class="flag flag-country-us"></span>
                                             Carlson Limited
@@ -1114,7 +1472,8 @@
                                         <td>$887</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1127,9 +1486,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001402</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">UX Wireframes</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">UX Wireframes</a>
+                                        </td>
                                         <td>
                                             <span class="flag flag-country-gb"></span>
                                             Adobe
@@ -1146,7 +1507,8 @@
                                         <td>$1200</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1159,9 +1521,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001403</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">New Dashboard</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">New Dashboard</a>
+                                        </td>
                                         <td>
                                             <span class="flag flag-country-de"></span>
                                             Bluewolf
@@ -1178,7 +1542,8 @@
                                         <td>$534</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1191,9 +1556,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001404</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Landing Page</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Landing Page</a>
+                                        </td>
                                         <td>
                                             <span class="flag flag-country-br"></span>
                                             Salesforce
@@ -1210,7 +1577,8 @@
                                         <td>$1500</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1223,9 +1591,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001405</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Marketing Templates</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Marketing
+                                                Templates</a></td>
                                         <td>
                                             <span class="flag flag-country-pl"></span>
                                             Printic
@@ -1242,7 +1612,8 @@
                                         <td>$648</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1255,9 +1626,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001406</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Presentation</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales
+                                                Presentation</a></td>
                                         <td>
                                             <span class="flag flag-country-br"></span>
                                             Tabdaq
@@ -1274,7 +1647,8 @@
                                         <td>$300</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1287,9 +1661,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001407</span></td>
-                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Logo & Print</a></td>
+                                        <td><a href="invoice.html" class="text-reset" tabindex="-1">Logo & Print</a>
+                                        </td>
                                         <td>
                                             <span class="flag flag-country-us"></span>
                                             Apple
@@ -1306,7 +1682,8 @@
                                         <td>$2500</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1319,7 +1696,8 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input class="form-check-input m-0 align-middle" type="checkbox" aria-label="Select invoice"></td>
+                                        <td><input class="form-check-input m-0 align-middle" type="checkbox"
+                                                   aria-label="Select invoice"></td>
                                         <td><span class="text-muted">001408</span></td>
                                         <td><a href="invoice.html" class="text-reset" tabindex="-1">Icons</a></td>
                                         <td>
@@ -1338,7 +1716,8 @@
                                         <td>$940</td>
                                         <td class="text-end">
                             <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
+                                      data-bs-toggle="dropdown">Actions</button>
                               <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">
                                   Action
@@ -1354,12 +1733,18 @@
                                 </table>
                             </div>
                             <div class="card-footer d-flex align-items-center">
-                                <p class="m-0 text-muted">Showing <span>1</span> to <span>8</span> of <span>16</span> entries</p>
+                                <p class="m-0 text-muted">Showing <span>1</span> to <span>8</span> of <span>16</span>
+                                    entries</p>
                                 <ul class="pagination m-0 ms-auto">
                                     <li class="page-item disabled">
                                         <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
                                             <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M15 6l-6 6l6 6"/>
+                                            </svg>
                                             prev
                                         </a>
                                     </li>
@@ -1371,7 +1756,12 @@
                                     <li class="page-item">
                                         <a class="page-link" href="#">
                                             next <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                                <path d="M9 6l6 6l-6 6"/>
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
@@ -1381,40 +1771,7 @@
                 </div>
             </div>
         </div>
-        <footer class="footer footer-transparent d-print-none">
-            <div class="container-xl">
-                <div class="row text-center align-items-center flex-row-reverse">
-                    <div class="col-lg-auto ms-lg-auto">
-                        <ul class="list-inline list-inline-dots mb-0">
-                            <li class="list-inline-item"><a href="https://tabler.io/docs" target="_blank" class="link-secondary" rel="noopener">Documentation</a></li>
-                            <li class="list-inline-item"><a href="./license.html" class="link-secondary">License</a></li>
-                            <li class="list-inline-item"><a href="https://github.com/tabler/tabler" target="_blank" class="link-secondary" rel="noopener">Source code</a></li>
-                            <li class="list-inline-item">
-                                <a href="https://github.com/sponsors/codecalm" target="_blank" class="link-secondary" rel="noopener">
-                                    <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-                                    Sponsor
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                        <ul class="list-inline list-inline-dots mb-0">
-                            <li class="list-inline-item">
-                                Copyright &copy; 2023
-                                <a href="." class="link-secondary">Tabler</a>.
-                                All rights reserved.
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="./changelog.html" class="link-secondary" rel="noopener">
-                                    v1.0.0-beta19
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        @include('template.footer')
     </div>
 </div>
 <div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1468,7 +1825,7 @@
                     <span class="input-group-text">
                       https://tabler.io/reports/
                     </span>
-                                <input type="text" class="form-control ps-0"  value="report-01" autocomplete="off">
+                                <input type="text" class="form-control ps-0" value="report-01" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -1512,7 +1869,13 @@
                 </a>
                 <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
                     <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 5l0 14"/>
+                        <path d="M5 12l14 0"/>
+                    </svg>
                     Create new report
                 </a>
             </div>
@@ -1803,7 +2166,7 @@
 </script>
 <script>
     // @formatter:on
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         const map = new jsVectorMap({
             selector: '#map-world',
             map: 'world',
@@ -1820,7 +2183,190 @@
             // -------- Series --------
             visualizeData: {
                 scale: [tabler.getColor('bg-surface'), tabler.getColor('primary')],
-                values: { "AF": 16, "AL": 11, "DZ": 158, "AO": 85, "AG": 1, "AR": 351, "AM": 8, "AU": 1219, "AT": 366, "AZ": 52, "BS": 7, "BH": 21, "BD": 105, "BB": 3, "BY": 52, "BE": 461, "BZ": 1, "BJ": 6, "BT": 1, "BO": 19, "BA": 16, "BW": 12, "BR": 2023, "BN": 11, "BG": 44, "BF": 8, "BI": 1, "KH": 11, "CM": 21, "CA": 1563, "CV": 1, "CF": 2, "TD": 7, "CL": 199, "CN": 5745, "CO": 283, "KM": 0, "CD": 12, "CG": 11, "CR": 35, "CI": 22, "HR": 59, "CY": 22, "CZ": 195, "DK": 304, "DJ": 1, "DM": 0, "DO": 50, "EC": 61, "EG": 216, "SV": 21, "GQ": 14, "ER": 2, "EE": 19, "ET": 30, "FJ": 3, "FI": 231, "FR": 2555, "GA": 12, "GM": 1, "GE": 11, "DE": 3305, "GH": 18, "GR": 305, "GD": 0, "GT": 40, "GN": 4, "GW": 0, "GY": 2, "HT": 6, "HN": 15, "HK": 226, "HU": 132, "IS": 12, "IN": 1430, "ID": 695, "IR": 337, "IQ": 84, "IE": 204, "IL": 201, "IT": 2036, "JM": 13, "JP": 5390, "JO": 27, "KZ": 129, "KE": 32, "KI": 0, "KR": 986, "KW": 117, "KG": 4, "LA": 6, "LV": 23, "LB": 39, "LS": 1, "LR": 0, "LY": 77, "LT": 35, "LU": 52, "MK": 9, "MG": 8, "MW": 5, "MY": 218, "MV": 1, "ML": 9, "MT": 7, "MR": 3, "MU": 9, "MX": 1004, "MD": 5, "MN": 5, "ME": 3, "MA": 91, "MZ": 10, "MM": 35, "NA": 11, "NP": 15, "NL": 770, "NZ": 138, "NI": 6, "NE": 5, "NG": 206, "NO": 413, "OM": 53, "PK": 174, "PA": 27, "PG": 8, "PY": 17, "PE": 153, "PH": 189, "PL": 438, "PT": 223, "QA": 126, "RO": 158, "RU": 1476, "RW": 5, "WS": 0, "ST": 0, "SA": 434, "SN": 12, "RS": 38, "SC": 0, "SL": 1, "SG": 217, "SK": 86, "SI": 46, "SB": 0, "ZA": 354, "ES": 1374, "LK": 48, "KN": 0, "LC": 1, "VC": 0, "SD": 65, "SR": 3, "SZ": 3, "SE": 444, "CH": 522, "SY": 59, "TW": 426, "TJ": 5, "TZ": 22, "TH": 312, "TL": 0, "TG": 3, "TO": 0, "TT": 21, "TN": 43, "TR": 729, "TM": 0, "UG": 17, "UA": 136, "AE": 239, "GB": 2258, "US": 4624, "UY": 40, "UZ": 37, "VU": 0, "VE": 285, "VN": 101, "YE": 30, "ZM": 15, "ZW": 5 },
+                values: {
+                    "AF": 16,
+                    "AL": 11,
+                    "DZ": 158,
+                    "AO": 85,
+                    "AG": 1,
+                    "AR": 351,
+                    "AM": 8,
+                    "AU": 1219,
+                    "AT": 366,
+                    "AZ": 52,
+                    "BS": 7,
+                    "BH": 21,
+                    "BD": 105,
+                    "BB": 3,
+                    "BY": 52,
+                    "BE": 461,
+                    "BZ": 1,
+                    "BJ": 6,
+                    "BT": 1,
+                    "BO": 19,
+                    "BA": 16,
+                    "BW": 12,
+                    "BR": 2023,
+                    "BN": 11,
+                    "BG": 44,
+                    "BF": 8,
+                    "BI": 1,
+                    "KH": 11,
+                    "CM": 21,
+                    "CA": 1563,
+                    "CV": 1,
+                    "CF": 2,
+                    "TD": 7,
+                    "CL": 199,
+                    "CN": 5745,
+                    "CO": 283,
+                    "KM": 0,
+                    "CD": 12,
+                    "CG": 11,
+                    "CR": 35,
+                    "CI": 22,
+                    "HR": 59,
+                    "CY": 22,
+                    "CZ": 195,
+                    "DK": 304,
+                    "DJ": 1,
+                    "DM": 0,
+                    "DO": 50,
+                    "EC": 61,
+                    "EG": 216,
+                    "SV": 21,
+                    "GQ": 14,
+                    "ER": 2,
+                    "EE": 19,
+                    "ET": 30,
+                    "FJ": 3,
+                    "FI": 231,
+                    "FR": 2555,
+                    "GA": 12,
+                    "GM": 1,
+                    "GE": 11,
+                    "DE": 3305,
+                    "GH": 18,
+                    "GR": 305,
+                    "GD": 0,
+                    "GT": 40,
+                    "GN": 4,
+                    "GW": 0,
+                    "GY": 2,
+                    "HT": 6,
+                    "HN": 15,
+                    "HK": 226,
+                    "HU": 132,
+                    "IS": 12,
+                    "IN": 1430,
+                    "ID": 695,
+                    "IR": 337,
+                    "IQ": 84,
+                    "IE": 204,
+                    "IL": 201,
+                    "IT": 2036,
+                    "JM": 13,
+                    "JP": 5390,
+                    "JO": 27,
+                    "KZ": 129,
+                    "KE": 32,
+                    "KI": 0,
+                    "KR": 986,
+                    "KW": 117,
+                    "KG": 4,
+                    "LA": 6,
+                    "LV": 23,
+                    "LB": 39,
+                    "LS": 1,
+                    "LR": 0,
+                    "LY": 77,
+                    "LT": 35,
+                    "LU": 52,
+                    "MK": 9,
+                    "MG": 8,
+                    "MW": 5,
+                    "MY": 218,
+                    "MV": 1,
+                    "ML": 9,
+                    "MT": 7,
+                    "MR": 3,
+                    "MU": 9,
+                    "MX": 1004,
+                    "MD": 5,
+                    "MN": 5,
+                    "ME": 3,
+                    "MA": 91,
+                    "MZ": 10,
+                    "MM": 35,
+                    "NA": 11,
+                    "NP": 15,
+                    "NL": 770,
+                    "NZ": 138,
+                    "NI": 6,
+                    "NE": 5,
+                    "NG": 206,
+                    "NO": 413,
+                    "OM": 53,
+                    "PK": 174,
+                    "PA": 27,
+                    "PG": 8,
+                    "PY": 17,
+                    "PE": 153,
+                    "PH": 189,
+                    "PL": 438,
+                    "PT": 223,
+                    "QA": 126,
+                    "RO": 158,
+                    "RU": 1476,
+                    "RW": 5,
+                    "WS": 0,
+                    "ST": 0,
+                    "SA": 434,
+                    "SN": 12,
+                    "RS": 38,
+                    "SC": 0,
+                    "SL": 1,
+                    "SG": 217,
+                    "SK": 86,
+                    "SI": 46,
+                    "SB": 0,
+                    "ZA": 354,
+                    "ES": 1374,
+                    "LK": 48,
+                    "KN": 0,
+                    "LC": 1,
+                    "VC": 0,
+                    "SD": 65,
+                    "SR": 3,
+                    "SZ": 3,
+                    "SE": 444,
+                    "CH": 522,
+                    "SY": 59,
+                    "TW": 426,
+                    "TJ": 5,
+                    "TZ": 22,
+                    "TH": 312,
+                    "TL": 0,
+                    "TG": 3,
+                    "TO": 0,
+                    "TT": 21,
+                    "TN": 43,
+                    "TR": 729,
+                    "TM": 0,
+                    "UG": 17,
+                    "UA": 136,
+                    "AE": 239,
+                    "GB": 2258,
+                    "US": 4624,
+                    "UY": 40,
+                    "UZ": 37,
+                    "VU": 0,
+                    "VE": 285,
+                    "VN": 101,
+                    "YE": 30,
+                    "ZM": 15,
+                    "ZW": 5
+                },
             },
         });
         window.addEventListener("resize", () => {
