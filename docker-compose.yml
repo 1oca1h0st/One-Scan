@@ -31,3 +31,14 @@ services:
         restart: always
         ports:
             - "127.0.0.1:6379:6379"
+
+    rabbitmq:
+        container_name: rabbitmq
+        image: rabbitmq:3-management
+        restart: always
+        environment:
+            RABBITMQ_DEFAULT_USER: "one-scan"
+            RABBITMQ_DEFAULT_PASS: "one-scan"
+        ports:
+            - "127.0.0.1:5672:5672"
+            - "127.0.0.1:15672:15672"

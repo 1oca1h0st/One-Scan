@@ -71,6 +71,25 @@ return [
             'after_commit' => false,
         ],
 
+        'rabbitmq' => [
+            'driver' => 'rabbitmq',
+
+            'connection' => PhpAmqpLib\Connection\AMQPLazyConnection::class,
+            'queue' => env('RABBITMQ_QUEUE', 'celery'),
+            'exchange' => env('RABBITMQ_EXCHANGE', 'celery'),
+
+            'host' => env('RABBITMQ_HOST', '127.0.0.1'),
+            'port' => env('RABBITMQ_PORT', 5672),
+            'vhost' => env('RABBITMQ_VHOST', '/'),
+            'login' => env('RABBITMQ_LOGIN', 'guest'),
+            'password' => env('RABBITMQ_PASSWORD', 'guest'),
+            'queue_params' => [
+                'passive' => env('RABBITMQ_QUEUE_PASSIVE', false),
+                'durable' => env('RABBITMQ_QUEUE_DURABLE', true),
+                'exclusive' => env('RABBITMQ_QUEUE_EXCLUSIVE', false),
+                'auto_delete' => env('RABBITMQ_QUEUE_AUTODELETE', false),
+            ],
+        ]
     ],
 
     /*
