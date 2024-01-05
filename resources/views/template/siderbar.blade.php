@@ -205,7 +205,7 @@
         </div>
         <div class="collapse navbar-collapse" id="sidebar-menu">
             <ul class="navbar-nav pt-lg-3">
-                <li class="nav-item">
+                <li class="nav-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('dashboard') }}">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
@@ -292,13 +292,13 @@
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                        data-bs-auto-close="false" role="button" aria-expanded="false">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                         stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                            d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path
-                            d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path
-                            d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path
-                            d="M14 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools" width="24"
+                         height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                         stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                              fill="none"/><path
+                            d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"/><path d="M14.5 5.5l4 4"/><path
+                            d="M12 8l-5 -5l-4 4l5 5"/><path d="M7 8l-1.5 1.5"/><path d="M16 12l5 5l-4 4l-5 -5"/><path
+                            d="M16 17l-1.5 1.5"/></svg>
                   </span>
                         <span class="nav-link-title">
                     通用工具
@@ -394,6 +394,157 @@
                             </div>
                         </div>
                     </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                       data-bs-auto-close="false" role="button" aria-expanded="false">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-search" width="24"
+                         height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                         stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                              fill="none"/><path
+                            d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"/><path
+                            d="M12 18c-.328 0 -.652 -.017 -.97 -.05c-3.172 -.332 -5.85 -2.315 -8.03 -5.95c2.4 -4 5.4 -6 9 -6c3.465 0 6.374 1.853 8.727 5.558"/><path
+                            d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M20.2 20.2l1.8 1.8"/></svg>
+                  </span>
+                        <span class="nav-link-title">
+                    空间引擎
+                  </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-columns">
+                            <div class="dropdown-menu-column">
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        ZoomEye
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        Shodan
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        Fofa
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        Censys
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('dashboard') }}">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24"
+                         height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                         stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
+                                                                              fill="none"/>
+                        <path
+                            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"/><path
+                            d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/></svg>
+                  </span>
+                        <span class="nav-link-title">
+                    系统管理
+                  </span>
+                    </a>
                 </li>
             </ul>
         </div>
