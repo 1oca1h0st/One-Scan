@@ -240,7 +240,7 @@
                                     <a class="dropdown-item dropdown-toggle" href="#sidebar-cards"
                                        data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
                                        aria-expanded="false">
-                                        Cards
+                                        新建项目
                                         <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
                                     </a>
                                     <div class="dropdown-menu">
@@ -270,7 +270,114 @@
                                                 d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
                                             <path d="M9 14l6 0"/>
                                         </svg>
-                                        Error pages
+                                        查看项目
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                       data-bs-auto-close="false" role="button" aria-expanded="false">
+                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                            d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path
+                            d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path
+                            d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path><path
+                            d="M14 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path></svg>
+                  </span>
+                        <span class="nav-link-title">
+                    通用工具
+                  </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-columns">
+                            <div class="dropdown-menu-column">
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        Nuclei
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        Kunpeng
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="./error-404.html" class="dropdown-item">
+                                            404 page
+                                        </a>
+                                        <a href="./error-500.html" class="dropdown-item">
+                                            500 page
+                                        </a>
+                                        <a href="./error-maintenance.html" class="dropdown-item">
+                                            Maintenance page
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                       data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                       aria-expanded="false">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/file-minus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-inline me-1" width="24"
+                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                             fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                                            <path
+                                                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                                            <path d="M9 14l6 0"/>
+                                        </svg>
+                                        Dirmap
                                     </a>
                                     <div class="dropdown-menu">
                                         <a href="./error-404.html" class="dropdown-item">

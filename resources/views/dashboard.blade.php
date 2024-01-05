@@ -1,6 +1,6 @@
 @extends('template.header')
 
-@section('title', 'Dashboard')
+@section('title', 'Dashboard' . ' | ' . $appName)
 
 <body class="layout-fluid">
 <script src="./dist/js/demo-theme.min.js?1684106062"></script>
@@ -38,10 +38,10 @@
                                     <path d="M12 5l0 14"/>
                                     <path d="M5 12l14 0"/>
                                 </svg>
-                                Create new report
+                                Create a New Project
                             </a>
                             <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal"
-                               data-bs-target="#modal-report" aria-label="Create new report">
+                               data-bs-target="#modal-report" aria-label="Create a New Project">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
                                      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -64,7 +64,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
-                                    <div class="subheader">Sales</div>
+                                    <div class="subheader">Projects</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
@@ -87,7 +87,7 @@
                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                     fill="none"/><path
-                                  d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
+                                      d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
                         </span>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
-                                    <div class="subheader">Revenue</div>
+                                    <div class="subheader">IPs</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
@@ -127,7 +127,7 @@
                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                     fill="none"/><path
-                                  d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
+                                      d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
                         </span>
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
-                                    <div class="subheader">New clients</div>
+                                    <div class="subheader">Ports</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
@@ -172,7 +172,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center">
-                                    <div class="subheader">Active users</div>
+                                    <div class="subheader">Risks</div>
                                     <div class="ms-auto lh-1">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
@@ -194,7 +194,7 @@
                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                     fill="none"/><path
-                                  d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
+                                      d="M3 17l6 -6l4 4l8 -8"/><path d="M14 7l7 0l0 7"/></svg>
                         </span>
                                     </div>
                                 </div>
@@ -214,8 +214,8 @@
                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                    stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                         fill="none"/><path
-                                      d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"/><path
-                                      d="M12 3v3m0 12v3"/></svg>
+                                          d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"/><path
+                                          d="M12 3v3m0 12v3"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -240,9 +240,9 @@
                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                    stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                         fill="none"/><path
-                                      d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path
-                                      d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 17h-11v-14h-2"/><path
-                                      d="M6 5l14 1l-1 7h-13"/></svg>
+                                          d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path
+                                          d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M17 17h-11v-14h-2"/><path
+                                          d="M6 5l14 1l-1 7h-13"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -267,7 +267,7 @@
                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                    stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                         fill="none"/><path
-                                      d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"/></svg>
+                                          d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -292,7 +292,7 @@
                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                    stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"
                                                                                         fill="none"/><path
-                                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/></svg>
+                                          d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/></svg>
                             </span>
                                             </div>
                                             <div class="col">
@@ -766,7 +766,7 @@
                                          stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                         <path
-                                            d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7"/>
+                                                d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7"/>
                                         <path d="M10 10l.01 0"/>
                                         <path d="M14 10l.01 0"/>
                                         <path d="M10 14a3.5 3.5 0 0 0 4 0"/>
@@ -820,7 +820,7 @@
                                                     <path d="M9 15l6 -6"/>
                                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
                                                     <path
-                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
                                                 </svg>
                                             </a>
                                         </td>
@@ -845,7 +845,7 @@
                                                     <path d="M9 15l6 -6"/>
                                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
                                                     <path
-                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
                                                 </svg>
                                             </a>
                                         </td>
@@ -870,7 +870,7 @@
                                                     <path d="M9 15l6 -6"/>
                                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
                                                     <path
-                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
                                                 </svg>
                                             </a>
                                         </td>
@@ -895,7 +895,7 @@
                                                     <path d="M9 15l6 -6"/>
                                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
                                                     <path
-                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
                                                 </svg>
                                             </a>
                                         </td>
@@ -920,7 +920,7 @@
                                                     <path d="M9 15l6 -6"/>
                                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
                                                     <path
-                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
                                                 </svg>
                                             </a>
                                         </td>
@@ -945,7 +945,7 @@
                                                     <path d="M9 15l6 -6"/>
                                                     <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/>
                                                     <path
-                                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
+                                                            d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/>
                                                 </svg>
                                             </a>
                                         </td>
@@ -1070,7 +1070,7 @@
                                                  stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path
-                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
                                                 <path d="M16 3v4"/>
                                                 <path d="M8 3v4"/>
                                                 <path d="M4 11h16"/>
@@ -1103,7 +1103,7 @@
                                                     <path d="M8 9h8"/>
                                                     <path d="M8 13h6"/>
                                                     <path
-                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
                                                 </svg>
                                                 3</a>
                                         </td>
@@ -1127,7 +1127,7 @@
                                                  stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path
-                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
                                                 <path d="M16 3v4"/>
                                                 <path d="M8 3v4"/>
                                                 <path d="M4 11h16"/>
@@ -1160,7 +1160,7 @@
                                                     <path d="M8 9h8"/>
                                                     <path d="M8 13h6"/>
                                                     <path
-                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
                                                 </svg>
                                                 6</a>
                                         </td>
@@ -1183,7 +1183,7 @@
                                                  stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path
-                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
                                                 <path d="M16 3v4"/>
                                                 <path d="M8 3v4"/>
                                                 <path d="M4 11h16"/>
@@ -1216,7 +1216,7 @@
                                                     <path d="M8 9h8"/>
                                                     <path d="M8 13h6"/>
                                                     <path
-                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
                                                 </svg>
                                                 1</a>
                                         </td>
@@ -1240,7 +1240,7 @@
                                                  stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path
-                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
                                                 <path d="M16 3v4"/>
                                                 <path d="M8 3v4"/>
                                                 <path d="M4 11h16"/>
@@ -1273,7 +1273,7 @@
                                                     <path d="M8 9h8"/>
                                                     <path d="M8 13h6"/>
                                                     <path
-                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
                                                 </svg>
                                                 12</a>
                                         </td>
@@ -1297,7 +1297,7 @@
                                                  stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path
-                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
                                                 <path d="M16 3v4"/>
                                                 <path d="M8 3v4"/>
                                                 <path d="M4 11h16"/>
@@ -1330,7 +1330,7 @@
                                                     <path d="M8 9h8"/>
                                                     <path d="M8 13h6"/>
                                                     <path
-                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
                                                 </svg>
                                                 5</a>
                                         </td>
@@ -1354,7 +1354,7 @@
                                                  stroke-linecap="round" stroke-linejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                                 <path
-                                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
+                                                        d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"/>
                                                 <path d="M16 3v4"/>
                                                 <path d="M8 3v4"/>
                                                 <path d="M4 11h16"/>
@@ -1387,7 +1387,7 @@
                                                     <path d="M8 9h8"/>
                                                     <path d="M8 13h6"/>
                                                     <path
-                                                        d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
+                                                            d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z"/>
                                                 </svg>
                                                 3</a>
                                         </td>
@@ -1778,7 +1778,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">New report</h5>
+                <h5 class="modal-title">New project</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -1786,7 +1786,7 @@
                     <label class="form-label">Name</label>
                     <input type="text" class="form-control" name="example-text-input" placeholder="Your report name">
                 </div>
-                <label class="form-label">Report type</label>
+                <label class="form-label">Project type</label>
                 <div class="form-selectgroup-boxes row mb-3">
                     <div class="col-lg-6">
                         <label class="form-selectgroup-item">
@@ -1820,7 +1820,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="mb-3">
-                            <label class="form-label">Report url</label>
+                            <label class="form-label">Project url</label>
                             <div class="input-group input-group-flat">
                     <span class="input-group-text">
                       https://tabler.io/reports/
@@ -1876,7 +1876,7 @@
                         <path d="M12 5l0 14"/>
                         <path d="M5 12l14 0"/>
                     </svg>
-                    Create new report
+                    Create a New Project
                 </a>
             </div>
         </div>
