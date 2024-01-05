@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+    mysql:
+        container_name: mysql
+        image: mysql:8
+        restart: always
+        # need to be changed when deploy to prod
+        environment:
+            MYSQL_ROOT_PASSWORD: "one-scan@1234"
+            MYSQL_DATABASE: "one-scan"
+            MYSQL_USER: "one-scan"
+            MYSQL_PASS: "one-scan@1234"
+        ports:
+            - "127.0.0.1:3306:3306"
